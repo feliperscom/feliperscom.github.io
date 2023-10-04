@@ -6,17 +6,13 @@
 <body>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
-  <script>
-   window.onload = function () {
-    // Get the query string
-    const queryString = window.location.search;
-  
-    // Check if the query string contains an unnamed parameter with the value 'facebook'
-    if (queryString === '?=facebook') {
-      // Redirect to your Facebook page
-      window.location.href = "https://www.facebook.com/feliperscom";
-    }
-  };
+   <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const queryString = window.location.search;
+      if (queryString === '?=facebook') {
+        window.location.href = "https://www.facebook.com/feliperscom";
+      }
+    });
   </script>
 </body>
 </html>
